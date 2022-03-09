@@ -1,0 +1,444 @@
+/*  ------------------------------------------------
+    Template Name: Game
+    Description:  Dongal sports  HTML Template
+    Author: Hafizur
+    Author URI: https://hafizur83.xyz
+    Version: 1.0
+    Created: Hafizur
+-------------------------------------------------  */
+
+/* -----------------
+::: BASIC CSS
+----------------- */
+
+*{
+	margin: 0;
+	padding: 0; }
+body{
+	font-size: 15px;
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+h1{
+	font-size: 60px;
+}
+h2{
+	font-size: 34px;
+}
+h3{
+	font-size: 20px;
+}
+h4{
+	font-size: 18px;
+}
+p {
+	color: #ccc;
+	font-size: 15px;
+	line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  outline: 0 solid transparent;
+  font-weight: 400; }
+
+  a:hover, a:focus {
+    text-decoration: none;
+    outline: 0 solid transparent; }
+
+ul,
+ol {
+  margin: 0; }
+  ul li,
+  ol li {
+    list-style: none; }
+img{
+    max-width: 100%;
+}
+.btn{
+    font-size: 15px;
+    color: #fff;
+    height: 42px;
+    font-weight: 600;
+    padding: 0 15px;
+    letter-spacing: 2px;
+    background: #fa5c5c;
+	text-transform: uppercase;
+	border-radius: 4px;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+}
+.btn:hover{
+    color: #fff;
+}
+.navbar-btn:focus,.btn:focus{
+    outline: none;
+}
+.set-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* -----------------
+::: Header CSS
+----------------- */
+#header{
+    background: transparent;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+.header-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    max-width: 120px;
+    width: 100%;
+}
+.main-navbar li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.main-navbar li:last-child{
+    margin-right: 0;
+}
+.main-navbar li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+.main-navbar li.active a{
+    color: #f23849;
+}
+.main-navbar li a:hover{
+    color: #f23849;
+}
+.social-link a{
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-link a:last-child{
+    margin-right: 0;
+}
+.sticky#header{
+    background: #0a146e
+}
+.sticky .logo img{
+    max-width: 70px;
+}
+/*---Mobile Menu---*/
+.navbar-btn{
+    background: transparent;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+}
+
+/* -----------------
+::: Overlay CSS
+----------------- */
+.hero-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+}
+.area-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 1;
+}
+/* -----------------
+::: Hero CSS
+----------------- */
+.hero{
+    height: 795px;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-wrap{
+    z-index: 11;
+}
+.hero-wrap h1{
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+/* -----------------
+::: Our Games CSS
+----------------- */
+.section-title{
+    margin-bottom: 30px;
+    text-align: center;
+    z-index: 11;
+}
+.section-title h2{
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.section-title h2:before{
+    content: '';
+    height: 3px;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.our-games-area{
+    position: relative;
+    height: 720px;
+}
+.our-games-area-wrap{
+    padding-top: 70px;
+    z-index: 11;
+}
+.our-games-item{
+    padding: 0 10px;
+}
+.our-games-item img{
+    min-height: 400px;
+    width: 100%;
+}
+.our-games-area .owl-nav button.owl-next,
+.our-games-area .owl-nav button.owl-prev
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 30px;
+    border: 1px solid #fff;
+    font-size: 22px;
+    background: transparent;
+    color: #fff;
+}
+.our-games-area .owl-nav button.owl-next{
+    left: auto;
+    right: -25px;
+}
+.our-games-area .owl-nav button.owl-prev{
+    left: -25px;
+    right: auto;
+}
+
+/* -----------------
+::: Statistics CSS
+----------------- */
+
+.our-statistics-area{
+    position: relative;
+    height: 540px;
+}
+.statistics-wrap {
+    padding-top: 120px;
+}
+.statistics-wrap .section-title h2{
+    margin-bottom: 20px;
+}
+.section-title p{
+    max-width: 530px;
+    margin: auto;
+}
+.statistics-item{
+    text-align: center;
+}
+.statistics-item span{
+    color: #fff;
+    font-size: 65px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.statistics-item p{
+    color: #f23849;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* -----------------
+::: About Area CSS
+----------------- */
+.about-area{
+    position: relative;
+    height: 580px;;
+}
+.about-wrap{
+    padding-top: 120px;
+}
+.about-img img {
+    max-height: 500px;
+}
+.about-info .section-title h2:before {
+    left: 10%;
+    transform: translateX(-10%);
+}
+.about-info p{
+    margin-bottom: 40px;
+}
+.readmore-btn{
+    font-size: 15px;
+    color: #fff;
+    height: 42px;
+    font-weight: 600;
+    padding: 0 15px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    background: #fa5c5c;
+    transition-duration: 0.5s;
+}
+/* -----------------
+::: Footer CSS
+----------------- */
+.footer-wrap{
+    background: #0a146e;
+    padding-top: 50px;
+}
+.footer-about .logo{
+    margin-bottom: 10px;
+}
+.footer-about .logo img{
+    max-width: 100px;
+}
+.footer-about .social-link a{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 37px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.social-link a:last-child{
+    margin-right: 0;
+}
+.social-link a.facebook{
+    background: #22a7f0;
+}
+.social-link a.twitter{
+    background: #42cfe0;
+}
+.social-link a.instagram{
+    background: #517fa4;
+}
+.social-link a.youtube{
+    background: #fa5c5c;
+}
+.footer-widget h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+}
+.footer-widget ul{
+    width: 50%;
+    float: left;
+}
+.footer-widget li{
+    line-height: 27px;
+}
+.footer-widget li a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.subscribe {
+    margin-bottom: 30px;
+}
+.subscribe .form-control{
+    height: 42px;
+    border-radius: 0;
+    font-size: 15px;
+    color: #000;
+}
+.subscribe_btn{
+    font-size: 15px;
+    color: #fff;
+    height: 42px;
+    font-weight: 600;
+    padding: 0 15px;
+    letter-spacing: 2px;
+    background: #fa5c5c;
+    transition-duration: 0.5s;
+}
+.subscribe_btn:hover{
+    color: #fff;
+}
+.payment-method {
+    text-align: center;
+}
+.copyright{
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid rgba(221, 221, 221, 0.6);
+    margin-top: 20px;
+}
+.copyright p{
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+
+#topbtn {
+	position: fixed;
+    font-size: 35px;
+    color: #fff;
+    background: #fa5c5c;
+    padding: 3px 8px;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+    border: 0;
+	outline: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

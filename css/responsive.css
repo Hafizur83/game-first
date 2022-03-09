@@ -1,0 +1,99 @@
+@media (max-width:1200px){
+	.our-games-area{
+        height: 670px;
+    }
+}
+
+@media (max-width: 991px){
+    .our-games-item{
+        padding: 0 7px;
+    }
+	.statistics-item span {
+        font-size: 54px;
+    }
+    .statistics-item p {
+        font-size: 25px;
+    }
+}
+@media (max-width: 767px) {
+    .statistics-wrap {
+        padding-top: 65px;
+    }
+    .our-statistics-area {
+        height: 390px;
+    }
+    .statistics-item span {
+        font-size: 40px;
+    }
+    .statistics-item p {
+        font-size: 20px;
+    }
+    .about-area {
+        height: 745px;
+    }
+    .about-wrap {
+        padding-top: 70px;
+        text-align: center;
+    }
+    .about-info .section-title h2:before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 575px) {
+    .our-games-area .owl-nav button.owl-next{
+        right: 0;
+    }
+    .our-games-area .owl-nav button.owl-prev{
+        left: 0;
+    }
+    .our-statistics-area {
+        height: 540px;
+    }
+    .statistics-wrap {
+        padding-top: 53px;
+    }
+    .section-title p {
+        max-width: 485px;
+    }
+}
+@media (max-width: 479px) {
+    .hero {
+        height: 626px;
+    }
+    .hero-wrap h1 {
+        font-size: 43px;
+    }
+    .our-games-area {
+        height: 720px;
+    }
+    .our-games-area-wrap {
+        padding-top: 45px;
+    }
+    .our-statistics-area {
+        height: 555px;
+    }
+    .about-area {
+        height: 760px;
+    }
+    
+}
+@media (max-width: 411px) {
+    .our-games-area {
+        height: 650px;
+    }
+}
+@media (max-width: 360px) {
+    .our-games-area {
+        height: 599px;
+    }
+}
+
+
+	
+	
+	
+	
+	
+	
+	
